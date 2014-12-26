@@ -1,0 +1,31 @@
+<html>  
+ 
+<head>  
+ 
+ <title>Лабораторная №3</title>  
+ <script type="text/javascript">  
+ 
+ 
+ function addIt() {  
+ var value1 = (document.getElementById("M1").value);
+ var value2 = (document.getElementById("M2").value);   
+ var value3 = (document.getElementById("R").value);    
+ 
+ 
+ document.getElementById("output").value = 6*(0,00000000001)*((value1 * value2)/(value3 * value3));  
+ }  
+  
+ 
+</script>  
+ </head>  
+ 
+<body>  
+<form name="adder"> 
+<p> растояние</p><input type="text" name="R" id="R" value="" size="12" /> <br><br>   
+<p>масса</p><input type="text" name="M1" id="M1" value="" size="12" /> <br><br> 
+<p>масса2</p><input type="text" name="M2" id="M2" value="" size="12" /> <br><br>       
+<input type="button" value="Вычислить" onclick="addIt()">  
+<p>F</p><input type="text" name="output" id="output" size="12" />  
+</form>  
+</body>  
+</html> 
